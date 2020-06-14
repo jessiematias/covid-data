@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Form, Select } from 'antd';
 import {countriesName} from './api'
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core';
 
 const { Option } = Select;
 
@@ -16,7 +14,7 @@ useEffect(() => {
     }
     fetchCountriesList()
 }, [setFetchCountriesList])
-console.log(fetchedCountries)
+// console.log(fetchedCountries)
 //will re render when set fetched countries changes which enables the ability to pick different countries
     return (
         <div>

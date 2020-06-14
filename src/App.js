@@ -3,7 +3,6 @@ import "antd/dist/antd.css";
 import Chart from './Chart'
 import Countries from './Countries'
 import { Global } from '@emotion/core'
-import { colors } from './global';
 import { virusData } from './api'
 import { Typography } from 'antd';
 const { Text } = Typography;
@@ -33,7 +32,7 @@ const App = () => {
             <Global
                 styles={{
                     'body': {
-                        backgroundColor: `${colors.primaryGrey}`
+                        backgroundColor: '#212121'
                     },
                     '.container': {
                         display: 'flex',
